@@ -11,7 +11,8 @@
 <script setup>
 import { createClient } from "@supabase/supabase-js";
 const config = useRuntimeConfig();
-
+const supabaseUrl = config.public.supabaseUrl
+const superbaseToken = config.public.supabaseToken
 const supabase = createClient(supabaseUrl, superbaseToken);
 const countries = ref([]);
 
