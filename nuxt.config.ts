@@ -7,4 +7,7 @@ export default defineNuxtConfig({
       supabaseToken: process.env.SUPABASE_TOKEN,
     },
   },
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ]
 });
